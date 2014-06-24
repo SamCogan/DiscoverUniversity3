@@ -5,195 +5,714 @@
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <title>
         </title>
+		<link href="owl.carousel.css" rel="stylesheet">
+		<link href="owl.theme.css" rel="stylesheet">
         <link rel="stylesheet" href="https://ajax.aspnetcdn.com/ajax/jquery.mobile/1.1.1/jquery.mobile-1.1.1.min.css" />
         <link rel="stylesheet" href="my.css" />
-        <style>
-            /* App custom styles */
+		<style>
+            .owl-item
+			{
+			text-align:center;
+			}
+			#logo
+			{
+			display:none;
+			}
         </style>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js">
         </script>
         <script src="https://ajax.aspnetcdn.com/ajax/jquery.mobile/1.1.1/jquery.mobile-1.1.1.min.js">
         </script>
+		 
+
         <script src="my.js">
+</script>
+<script>
+$( document ).ready(function() {
+$( "#logo" ).fadeIn(1800);
+});
         </script>
+		
     </head>
     <body>
-        <!-- Product Description -->
+        <!-- Loading Screen -->
         <div data-role="page" id="page1">
-            <div id="header_menu_main" data-theme="d" data-role="header" data-position="fixed">
-                <h5 id="header_text">
-                    Product Desc.
-                </h5>
+            <div data-role="content" style="padding: 0px">
+		<center><a href="#page2" id="logo"><img src="logo.png"/><br />Enter app</a></center>
+            </div>
+        </div>
+        <!-- Main Menu -->
+        <div data-role="page" id="page2">
+            <div data-theme="b" data-role="header">
+                <h3>
+                    Main Menu
+                </h3>
+				
             </div>
             <div data-role="content">
-                <div id="grid_menu_main" class="ui-grid-a">
-                    <div class="ui-block-a">
-                        <div style="">
-                            <img style="width: 100px; height: 100px" src="http://www.aipla.org/committees/committee_pages/Anti-Counterfeiting-and-Anti-Piracy/PublishingImages/placeholder.jpg" />
-                        </div>
-                    </div>
-                    <div class="ui-block-b">
-                        <div>
-                            <p>
-                                <b>
-                                    <span id="_mce_caret" data-mce-bogus="true">
-                                        ﻿
-                                    </span>
-                                    Nike Adult Brazil Home Jersey.
-                                    <span id="_mce_caret" data-mce-bogus="true" style="">
-                                        <span style="font-size: xx-small;">
-                                            ﻿
-                                        </span>
-                                    </span>
-                                </b>
-                            </p>
-                        </div>
-                        <div>
-                            <p>
-                                <b>
-                                    Color:Yellow
-                                </b>
-                            </p>
-                        </div>
-                    </div>
+			<div id="demo">
+        <div class="container">
+          <div class="row">
+            <div class="span12">
+              <h1>World Cup Jerseys</h1>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="span12">
+
+              <div id="owl-example" class="owl-carousel">              
+
+                <div class="item dodgerBlue">
+                 <a href="#page11"> <img src="spain.jpg" alt="Light"> </a>
                 </div>
+
+                <div class="item skyBlue">
+                 <a href="#page12"> <img src="mexico.jpg" alt="Light">  </a>
+                </div>
+
+                <div class="item zombieGreen">
+                 <a href="#page13"> <img src="germany.jpg" alt="Light"> </a>
+                </div>
+
+                <div class="item violet">
+                 <a href="#page3"> <img src="3.jpg" alt="Light"> </a>
+                </div>
+
+              </div>
+
+
+            </div>
+          </div>
+
+        </div>
+      </div>
+            </div>
+            <div data-role="tabbar" data-iconpos="top" data-theme="b">
+                <ul>
+                    <li>
+                        <a href="#page14" data-theme="" data-icon="info">
+                            About
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#page2" data-theme="" data-icon="grid">
+                            Menu
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#page4" data-theme="" data-icon="star">
+                            Search
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- Search -->
+        <div data-role="page" id="page4">
+            <div data-theme="b" data-role="header">
+                <h3>
+                    Product Search
+                </h3>
+            </div>
+            <div data-role="content">
+                <ul data-role="listview" data-divider-theme="b" data-inset="true">
+                    <li data-role="list-divider" role="heading">
+                        Divider
+                    </li>
+                    <li data-theme="d">
+                        <a href="#page3" data-transition="slide">
+                            Brazil
+                        </a>
+                    </li>
+                    <li data-theme="d">
+                        <a href="#page11" data-transition="slide">
+                            Spain
+                        </a>
+                    </li>
+                    <li data-theme="d">
+                        <a href="#page12" data-transition="slide">
+                            Mexico
+                        </a>
+                    </li>
+                    <li data-theme="d">
+                        <a href="#page13" data-transition="slide">
+                            Germany
+                        </a>
+                    </li>
+                </ul>
+                <a data-role="button" href="#page2">
+                    Back
+                </a>
+            </div>
+            <div data-theme="b" data-role="footer" data-position="fixed">
+                <span class="ui-title">
+                </span>
+            </div>
+        </div>
+        <!-- Product Description_Brazil -->
+        <div data-role="page" id="page3">
+            <div data-theme="b" data-role="header">
+                <h3>
+                    Product Desc.
+                </h3>
+            </div>
+            <div data-role="content">
                 <div class="ui-grid-a">
                     <div class="ui-block-a">
-                        <div>
-                            <p>
-                                <b>
-                                    Size Chat:
-                                </b>
-                            </p>
-                            <p>
-                                <b>
-                                    <span style="font-size: x-small;" data-mce-style="font-size: x-small;">
-                                        XS/ S / M / X / Xl / XXl&nbsp;
-                                    </span>
-                                    <br />
-                                </b>
-                            </p>
-                            <hr />
-                            <p>
-                                <b>
-                                    &nbsp;
-                                </b>
-                            </p>
+                        <div style="">
+                            <img style="width: 125px; height: 150px" src="http://aponzone.com/images/brazil-2014-fifa-world-cup-home-soccer-jersey.jpg" />
                         </div>
                     </div>
                     <div class="ui-block-b">
+                        <div id="Jersey_Name">
+                            <p>
+                                <span style="font-size: small;" data-mce-style="font-size: small;">
+                                    <b>
+                                        Brazil World Cup Jersey
+                                    </b>
+                                </span>
+                            </p>
+                        </div>
+                        <div id="jersey_color">
+                            <p>
+                                <span style="font-size: small;" data-mce-style="font-size: small;">
+                                    <b>
+                                        Color: Yellow
+                                    </b>
+                                </span>
+                            </p>
+                        </div>
                     </div>
                 </div>
-                <div id="collapsed_menu" data-role="collapsible-set" data-theme="d" data-content-theme="d">
+                <div data-role="collapsible-set">
+                    <div data-role="collapsible" data-collapsed="true">
+                        <h3>
+                            Size
+                        </h3>
+                        <div id="Size Chart">
+                            <p>
+                                <strong>
+                                    S / M / L / XL
+                                </strong>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div id="store_list" data-role="collapsible-set">
                     <div data-role="collapsible" data-collapsed="false">
                         <h3>
                             Stores
                         </h3>
-                        <div class="ui-grid-b">
+                        <div class="ui-grid-a">
                             <div class="ui-block-a">
-                                <h4>
-                                    Store:
-                                </h4>
+                                <div id="lol_lol">
+                                    <p>
+                                        <b>
+                                            <a data-mce-href="http://www.champion.ie/" href="http://www.champion.ie/" title="Champion">
+                                                Champion
+                                            </a>
+                                            :
+                                        </b>
+                                    </p>
+                                    <p>
+                                        <b>
+                                            <a data-mce-href="https://www.google.ie/url?sa=t&amp;rct=j&amp;q=&amp;esrc=s&amp;source=web&amp;cd=1&amp;cad=rja&amp;uact=8&amp;ved=0CCAQFjAA&amp;url=http%3A%2F%2Fwww.lifestylesports.com%2F&amp;ei=ByKoU7_vArKp7AadpYGgDg&amp;usg=AFQjCNFt_n4DvVN7J3Besu9KDdL_0H_FGg&amp;sig2=qWpJNbXZAnY6g78W6DuZ2A&amp;bvm=bv.69411363,d.ZGU" href="https://www.google.ie/url?sa=t&amp;rct=j&amp;q=&amp;esrc=s&amp;source=web&amp;cd=1&amp;cad=rja&amp;uact=8&amp;ved=0CCAQFjAA&amp;url=http%3A%2F%2Fwww.lifestylesports.com%2F&amp;ei=ByKoU7_vArKp7AadpYGgDg&amp;usg=AFQjCNFt_n4DvVN7J3Besu9KDdL_0H_FGg&amp;sig2=qWpJNbXZAnY6g78W6DuZ2A&amp;bvm=bv.69411363,d.ZGU" title="Lifestyle">
+                                                LifeStyle
+                                            </a>
+                                            :
+                                        </b>
+                                    </p>
+                                    <p>
+                                        <b>
+                                            <a data-mce-href="http://www.jdsports.co.uk/home" href="http://www.jdsports.co.uk/home" title="JD">
+                                                JD
+                                            </a>
+                                            :
+                                        </b>
+                                    </p>
+                                </div>
                             </div>
                             <div class="ui-block-b">
-                                <h4>
-                                    Price:
-                                </h4>
-                            </div>
-                            <div class="ui-block-c">
-                                <h4>
-                                    Stock:
-                                </h4>
-                            </div>
-                            <div class="ui-block-a">
-                                <h5>
-                                    Champion Sports
-                                </h5>
-                            </div>
-                            <div class="ui-block-b">
-                                <h3>
-                                    €60
-                                </h3>
-                            </div>
-                            <div class="ui-block-c">
-                                <h5>
-                                    In-Stock
-                                </h5>
-                            </div>
-                            <div class="ui-block-a">
-                                <h4>
-                                    JD
-                                </h4>
-                            </div>
-                            <div class="ui-block-b">
-                                <h3>
-                                    €75
-                                </h3>
-                            </div>
-                            <div class="ui-block-c">
-                                <h5>
-                                    Out Of Stock
-                                </h5>
+                                <div>
+                                    <p>
+                                        <b>
+                                            €60
+                                        </b>
+                                    </p>
+                                    <p>
+                                        <b>
+                                            €75
+                                        </b>
+                                    </p>
+                                    <p>
+                                        <b>
+                                            €65
+                                        </b>
+                                    </p>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <form action="">
-                    &lt;form&gt;
-                </form>
-            </div>
-        </div>
-        <!-- Main Menu -->
-        <div data-role="page" id="page3">
-            <div data-role="content">
-                <div class="ui-grid-b">
-                    <div class="ui-block-a">
-                        <a data-role="button" href="#page3">
-                            Button
-                        </a>
-                    </div>
-                    <div class="ui-block-b">
-                        <div>
-                            <b>
-                                Enter content here...
-                            </b>
-                        </div>
-                    </div>
-                    <div class="ui-block-c">
-                        <a data-role="button" href="#page3">
-                            Button
-                        </a>
-                    </div>
-                    <div class="ui-block-a">
-                    </div>
-                    <div class="ui-block-b">
-                        <div style="width: 288px; height: 100px; position: relative; background-color: #fbfbfb; border: 1px solid #b8b8b8;">
-                            <img src="http://codiqa.com/static/images/v2/image.png" alt="image" style="position: absolute; top: 50%; left: 50%; margin-left: -16px; margin-top: -18px" />
-                        </div>
-                    </div>
-                    <div class="ui-block-c">
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Store Locator -->
-        <div data-role="page" id="page2">
-            <div data-role="content">
-                <a data-role="button" href="#page2">
-                    Button
+                <a id="BACK_BUTTON" data-role="button" href="#page4">
+                    Back
                 </a>
             </div>
-        </div>
-        <!-- Loading Screen -->
-        <div data-role="page" id="page4">
-            <div data-role="content">
-                <div style="">
-                    <img style="width: 292px; height: px" src="http://i103.photobucket.com/albums/m144/twaneski05/Splash%20Screens/AndroidGreenBlue.jpg" />
-                </div>
+            <div data-theme="b" data-role="footer" data-position="fixed">
+                <span class="ui-title">
+                </span>
             </div>
         </div>
-        <script>
-            //App custom javascript
-        </script>
+        <!-- Product Description_Spain -->
+        <div data-role="page" id="page11">
+            <div data-theme="b" data-role="header">
+                <h3>
+                    Product Desc.
+                </h3>
+            </div>
+            <div data-role="content">
+                <div class="ui-grid-a">
+                    <div class="ui-block-a">
+                        <div style="">
+                            <img style="width: 125px; height: 150px" src="http://www.bubblews.com/assets/images/news/1175528101_1389375570.jpg" />
+                        </div>
+                    </div>
+                    <div class="ui-block-b">
+                        <div id="Jersey_Name">
+                            <p>
+                                <span style="font-size: small;" data-mce-style="font-size: small;">
+                                    <b>
+                                        Spain World Cup Jersey
+                                    </b>
+                                </span>
+                            </p>
+                        </div>
+                        <div id="jersey_color">
+                            <p>
+                                <span style="font-size: small;" data-mce-style="font-size: small;">
+                                    <b>
+                                        Color: Red
+                                    </b>
+                                </span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div data-role="collapsible-set">
+                    <div data-role="collapsible" data-collapsed="true">
+                        <h3>
+                            Size
+                        </h3>
+                        <div id="Size Chart">
+                            <p>
+                                <strong>
+                                    S / M / L / XL
+                                </strong>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div id="store_list" data-role="collapsible-set">
+                    <div data-role="collapsible" data-collapsed="false">
+                        <h3>
+                            Stores
+                        </h3>
+                        <div class="ui-grid-a">
+                            <div class="ui-block-a">
+                                <div id="lol_lol">
+                                    <p>
+                                        <b>
+                                            <a data-mce-href="http://www.champion.ie/" href="http://www.champion.ie/" title="Champion">
+                                                Champion
+                                            </a>
+                                            :
+                                        </b>
+                                    </p>
+                                    <p>
+                                        <b>
+                                            <a data-mce-href="https://www.google.ie/url?sa=t&amp;rct=j&amp;q=&amp;esrc=s&amp;source=web&amp;cd=1&amp;cad=rja&amp;uact=8&amp;ved=0CCAQFjAA&amp;url=http%3A%2F%2Fwww.lifestylesports.com%2F&amp;ei=ByKoU7_vArKp7AadpYGgDg&amp;usg=AFQjCNFt_n4DvVN7J3Besu9KDdL_0H_FGg&amp;sig2=qWpJNbXZAnY6g78W6DuZ2A&amp;bvm=bv.69411363,d.ZGU" href="https://www.google.ie/url?sa=t&amp;rct=j&amp;q=&amp;esrc=s&amp;source=web&amp;cd=1&amp;cad=rja&amp;uact=8&amp;ved=0CCAQFjAA&amp;url=http%3A%2F%2Fwww.lifestylesports.com%2F&amp;ei=ByKoU7_vArKp7AadpYGgDg&amp;usg=AFQjCNFt_n4DvVN7J3Besu9KDdL_0H_FGg&amp;sig2=qWpJNbXZAnY6g78W6DuZ2A&amp;bvm=bv.69411363,d.ZGU" title="Lifestyle">
+                                                LifeStyle
+                                            </a>
+                                            :
+                                        </b>
+                                    </p>
+                                    <p>
+                                        <b>
+                                            <a data-mce-href="http://www.jdsports.co.uk/home" href="http://www.jdsports.co.uk/home" title="JD">
+                                                JD
+                                            </a>
+                                            :
+                                        </b>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="ui-block-b">
+                                <div>
+                                    <p>
+                                        <b>
+                                            €60
+                                        </b>
+                                    </p>
+                                    <p>
+                                        <b>
+                                            €75
+                                        </b>
+                                    </p>
+                                    <p>
+                                        <b>
+                                            €65
+                                        </b>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <a id="BACK_BUTTON" data-role="button" href="#page4">
+                    Back
+                </a>
+            </div>
+            <div data-theme="b" data-role="footer" data-position="fixed">
+                <span class="ui-title">
+                </span>
+            </div>
+        </div>
+        <!-- Product Description_Mexico -->
+        <div data-role="page" id="page12">
+            <div data-theme="b" data-role="header">
+                <h3>
+                    Product Desc.
+                </h3>
+            </div>
+            <div data-role="content">
+                <div class="ui-grid-a">
+                    <div class="ui-block-a">
+                        <div style="">
+                            <img style="width: 125px; height: 150px" src="http://1.bp.blogspot.com/-Qfv7RbX7fYM/UlkXB7fUkbI/AAAAAAAAVbU/_KlmGtbYxlQ/s1600/Mexico+2014+World+Cup+Home+Kit+(2).jpg" />
+                        </div>
+                    </div>
+                    <div class="ui-block-b">
+                        <div id="Jersey_Name">
+                            <p>
+                                <span style="font-size: small;" data-mce-style="font-size: small;">
+                                    <b>
+                                        Mexico World Cup Jersey
+                                    </b>
+                                </span>
+                            </p>
+                        </div>
+                        <div id="jersey_color">
+                            <p>
+                                <span style="font-size: small;" data-mce-style="font-size: small;">
+                                    <b>
+                                        Color: Green
+                                    </b>
+                                </span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div data-role="collapsible-set">
+                    <div data-role="collapsible" data-collapsed="true">
+                        <h3>
+                            Size
+                        </h3>
+                        <div id="Size Chart">
+                            <p>
+                                <strong>
+                                    S / M / L / XL
+                                </strong>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div id="store_list" data-role="collapsible-set">
+                    <div data-role="collapsible" data-collapsed="false">
+                        <h3>
+                            Stores
+                        </h3>
+                        <div class="ui-grid-a">
+                            <div class="ui-block-a">
+                                <div id="lol_lol">
+                                    <p>
+                                        <b>
+                                            <a data-mce-href="http://www.champion.ie/" href="http://www.champion.ie/" title="Champion">
+                                                Champion
+                                            </a>
+                                            :
+                                        </b>
+                                    </p>
+                                    <p>
+                                        <b>
+                                            <a data-mce-href="https://www.google.ie/url?sa=t&amp;rct=j&amp;q=&amp;esrc=s&amp;source=web&amp;cd=1&amp;cad=rja&amp;uact=8&amp;ved=0CCAQFjAA&amp;url=http%3A%2F%2Fwww.lifestylesports.com%2F&amp;ei=ByKoU7_vArKp7AadpYGgDg&amp;usg=AFQjCNFt_n4DvVN7J3Besu9KDdL_0H_FGg&amp;sig2=qWpJNbXZAnY6g78W6DuZ2A&amp;bvm=bv.69411363,d.ZGU" href="https://www.google.ie/url?sa=t&amp;rct=j&amp;q=&amp;esrc=s&amp;source=web&amp;cd=1&amp;cad=rja&amp;uact=8&amp;ved=0CCAQFjAA&amp;url=http%3A%2F%2Fwww.lifestylesports.com%2F&amp;ei=ByKoU7_vArKp7AadpYGgDg&amp;usg=AFQjCNFt_n4DvVN7J3Besu9KDdL_0H_FGg&amp;sig2=qWpJNbXZAnY6g78W6DuZ2A&amp;bvm=bv.69411363,d.ZGU" title="Lifestyle">
+                                                LifeStyle
+                                            </a>
+                                            :
+                                        </b>
+                                    </p>
+                                    <p>
+                                        <b>
+                                            <a data-mce-href="http://www.jdsports.co.uk/home" href="http://www.jdsports.co.uk/home" title="JD">
+                                                JD
+                                            </a>
+                                            :
+                                        </b>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="ui-block-b">
+                                <div>
+                                    <p>
+                                        <b>
+                                            €60
+                                        </b>
+                                    </p>
+                                    <p>
+                                        <b>
+                                            €75
+                                        </b>
+                                    </p>
+                                    <p>
+                                        <b>
+                                            €65
+                                        </b>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <a id="BACK_BUTTON" data-role="button" href="#page4">
+                    Back
+                </a>
+            </div>
+            <div data-theme="b" data-role="footer" data-position="fixed">
+                <span class="ui-title">
+                </span>
+            </div>
+        </div>
+        <!-- Product Description_Germany -->
+        <div data-role="page" id="page13">
+            <div data-theme="b" data-role="header">
+                <h3>
+                    Product Desc.
+                </h3>
+            </div>
+            <div data-role="content">
+                <div class="ui-grid-a">
+                    <div class="ui-block-a">
+                        <div style="">
+                            <img style="width: 125px; height: 150px" src="http://www.91dove.com/images/football/Germany03.jpg" />
+                        </div>
+                    </div>
+                    <div class="ui-block-b">
+                        <div id="Jersey_Name">
+                            <p>
+                                <span style="font-size: small;" data-mce-style="font-size: small;">
+                                    <b>
+                                        Germany World Cup Jersey
+                                    </b>
+                                </span>
+                            </p>
+                        </div>
+                        <div id="jersey_color">
+                            <p>
+                                <span style="font-size: small;" data-mce-style="font-size: small;">
+                                    <b>
+                                        Color: White
+                                    </b>
+                                </span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div data-role="collapsible-set">
+                    <div data-role="collapsible" data-collapsed="true">
+                        <h3>
+                            Size
+                        </h3>
+                        <div id="Size Chart">
+                            <p>
+                                <strong>
+                                    S / M / L / XL
+                                </strong>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div id="store_list" data-role="collapsible-set">
+                    <div data-role="collapsible" data-collapsed="false">
+                        <h3>
+                            Stores
+                        </h3>
+                        <div class="ui-grid-a">
+                            <div class="ui-block-a">
+                                <div id="lol_lol">
+                                    <p>
+                                        <b>
+                                            <a data-mce-href="http://www.champion.ie/" href="http://www.champion.ie/" title="Champion">
+                                                Champion
+                                            </a>
+                                            :
+                                        </b>
+                                    </p>
+                                    <p>
+                                        <b>
+                                            <a data-mce-href="https://www.google.ie/url?sa=t&amp;rct=j&amp;q=&amp;esrc=s&amp;source=web&amp;cd=1&amp;cad=rja&amp;uact=8&amp;ved=0CCAQFjAA&amp;url=http%3A%2F%2Fwww.lifestylesports.com%2F&amp;ei=ByKoU7_vArKp7AadpYGgDg&amp;usg=AFQjCNFt_n4DvVN7J3Besu9KDdL_0H_FGg&amp;sig2=qWpJNbXZAnY6g78W6DuZ2A&amp;bvm=bv.69411363,d.ZGU" href="https://www.google.ie/url?sa=t&amp;rct=j&amp;q=&amp;esrc=s&amp;source=web&amp;cd=1&amp;cad=rja&amp;uact=8&amp;ved=0CCAQFjAA&amp;url=http%3A%2F%2Fwww.lifestylesports.com%2F&amp;ei=ByKoU7_vArKp7AadpYGgDg&amp;usg=AFQjCNFt_n4DvVN7J3Besu9KDdL_0H_FGg&amp;sig2=qWpJNbXZAnY6g78W6DuZ2A&amp;bvm=bv.69411363,d.ZGU" title="Lifestyle">
+                                                LifeStyle
+                                            </a>
+                                            :
+                                        </b>
+                                    </p>
+                                    <p>
+                                        <b>
+                                            <a data-mce-href="http://www.jdsports.co.uk/home" href="http://www.jdsports.co.uk/home" title="JD">
+                                                JD
+                                            </a>
+                                            :
+                                        </b>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="ui-block-b">
+                                <div>
+                                    <p>
+                                        <b>
+                                            €60
+                                        </b>
+                                    </p>
+                                    <p>
+                                        <b>
+                                            €75
+                                        </b>
+                                    </p>
+                                    <p>
+                                        <b>
+                                            €65
+                                        </b>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <a data-role="button" href="#page4">
+                    Back
+                </a>
+            </div>
+            <div data-theme="b" data-role="footer" data-position="fixed">
+                <span class="ui-title">
+                </span>
+            </div>
+        </div>
+        <!-- About Page -->
+        <div data-role="page" id="page14">
+            <div data-theme="b" data-role="header">
+                <h3>
+                    About
+                </h3>
+            </div>
+            <div data-role="content">
+                <div data-role="collapsible-set">
+                    <div data-role="collapsible" data-collapsed="false">
+                        <h3>
+                            Group Information
+                        </h3>
+                        <div>
+                            <p>
+                                <b>
+                                    The Wolfpack is a group of young teenagers who created this app during
+                                    the NCI Discover University.
+                                </b>
+                            </p>
+                            <p>
+                                <b>
+                                    The Group consists of Brandon, Jack, James, Precious &amp; Stephanie.
+                                </b>
+                            </p>
+                        </div>
+                    </div>
+                    <div data-role="collapsible" data-collapsed="false">
+                        <h3>
+                            Social Media
+                        </h3>
+                        <div>
+                            <p>
+                                <b>
+                                    Are Group has a Facebook and Twitter Page
+                                </b>
+                            </p>
+                            <p>
+                                <a data-mce-href="https://www.facebook.com/" href="https://www.facebook.com/" title="Facebook">
+                                    <b>
+                                        <br />
+                                    </b>
+                                </a>
+                            </p>
+                        </div>
+                        <div>
+                            <a id="facebook_button" href="https://www.facebook.com/pages/World-cup-jersey-finder/255469044654978?ref_type=bookmark" data-transition="fade">
+                                Facebook
+                            </a>
+                        </div>
+                        <div>
+                            <a href="https://twitter.com/worldcupjersey1" data-transition="fade">
+                                Twitter
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <a data-role="button" href="#page2">
+                    Back
+                </a>
+            </div>
+            <div data-theme="b" data-role="footer" data-position="fixed">
+                <h3>
+                </h3>
+            </div>
+        </div>
+        <script src="owl.carousel.min.js"></script>
+		<script>
+
+    $(document).ready(function($) {
+      $("#owl-example").owlCarousel();
+    });
+
+
+    $("body").data("page", "frontpage");
+
+    </script>
+	<script type="text/javascript">
+    jQuery(function($){
+      var disqus_loaded = false;
+      var top = $("#faq").offset().top; 
+      var owldomain = window.location.hostname.indexOf("owlgraphic");
+      var comments = window.location.href.indexOf("comment");
+
+      if(owldomain !== -1){
+        function check(){
+          if ( (!disqus_loaded && $(window).scrollTop() + $(window).height() > top) || (comments !== -1) ){
+            $(window).off( "scroll" )
+            disqus_loaded = true;
+            /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+            var disqus_shortname = 'owlcarousel'; // required: replace example with your forum shortname
+            var disqus_identifier = 'OWL Carousel';
+            //var disqus_url = 'http://owlgraphic.com/owlcarousel/';
+            /* * * DON'T EDIT BELOW THIS LINE * * */
+            (function() {
+                var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+                dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+                (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+            })();
+          }
+        }
+        $(window).on( "scroll", check )
+        check();
+      } else {
+        $('.disqus').hide();
+      }
+    });
+    </script>
     </body>
 </html>
